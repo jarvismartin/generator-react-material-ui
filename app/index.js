@@ -10,7 +10,7 @@ module.exports = generators.Base.extend({
   },
 
   writing: function () {
-    // Make an 'assets' directory
+    // Make a directory for images
     this.dest.mkdir('/img');
 
     // Copy the index.html, and inject some values.
