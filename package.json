@@ -26,6 +26,7 @@
     "yeoman-generator": "^0.18.4"
   },
   "devDependencies": {
+    "gulp-imagemin": "^2.1.0",
     "mocha": "^2.1.0"
   }
 }
