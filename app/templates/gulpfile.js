@@ -21,7 +21,7 @@ var paths = {
   appjs: ['./src/app.jsx'],
   js: ['src/**/*.js'],
   indexhtml: ['./src/index.html'],
-  assets: ['./assets/**']
+  images: ['./img/**']
 };
 
 // Here is where we will be sending all our files.
@@ -90,11 +90,11 @@ gulp.task('js', function() {
 });
 
 /**
- * Assets
+ * images
  */
-gulp.task('assets', function () {
-  return gulp.src(paths.assets)
-    .pipe(gulp.dest(path.join(destPath, 'assets')));
+gulp.task('images', function () {
+  return gulp.src(paths.images)
+    .pipe(gulp.dest(path.join(destPath, 'img')));
 });
 
 /*
@@ -141,7 +141,7 @@ gulp.task('build', function (done) {
   return runsequence(
     'clean',
     'copy-material',
-    ['style', 'less', 'js', 'assets'],
+    ['style', 'less', 'js', 'images'],
     'index',
     done
   );
