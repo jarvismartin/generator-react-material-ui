@@ -10,16 +10,16 @@
     "react",
     "material-design"
   ],
-  "homepage": "https://github.com/shovon/generator-react-material-ui",
-  "bugs": "https://github.com/shovon/generator-react-material-ui/issues",
+  "homepage": "https://github.com/jarvismartin/generator-react-material-ui",
+  "bugs": "https://github.com/jarvismartin/generator-react-material-ui/issues",
   "license": "MIT",
   "author": {
-    "name": "Salehen Shovon Rahman",
-    "email": "salehen.rahman@gmail.com"
+    "name": "Jarvis Martin",
+    "email": ""
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/shovon/generator-react-material-ui.git"
+    "url": "https://github.com/jarvismartin/generator-react-material-ui.git"
   },
   "dependencies": {
     "async": "^0.9.0",
