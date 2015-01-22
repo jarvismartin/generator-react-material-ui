@@ -12,7 +12,7 @@ var runsequence = require('gulp-run-sequence');
 var ncp = require('ncp').ncp;
 var gutil = require('gulp-util');
 var imagemin = require('gulp-imagemin');
-var pngquant = require('gulp-imagemin/node_modules/imagemin/node_modules/imagemin-pngquant');
+var pngquant = require('imagemin-pngquant');
 
 // Just some directories that we will be providing to `gulp.src` method calls.
 var paths = {
