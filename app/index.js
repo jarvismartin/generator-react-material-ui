@@ -11,8 +11,8 @@ module.exports = generators.Base.extend({
 
   writing: function () {
     // Make an 'assets' directory
-    this.dest.mkdir('assets/img');
-    
+    this.dest.mkdir('/img');
+
     // Copy the index.html, and inject some values.
     this.fs.copyTpl(
       this.templatePath('src/index.html'),
