@@ -11,6 +11,8 @@ var inject = require('gulp-inject');
 var runsequence = require('gulp-run-sequence');
 var ncp = require('ncp').ncp;
 var gutil = require('gulp-util');
+var imagemin = require('gulp-imagemin');
+var pngquant = require('gulp-imagemin/node_modules/imagemin/node_modules/imagemin-pngquant');
 
 // Just some directories that we will be providing to `gulp.src` method calls.
 var paths = {
@@ -94,6 +96,11 @@ gulp.task('js', function() {
  */
 gulp.task('images', function () {
   return gulp.src(paths.images)
+    .pipe(imagemin({
+      progressive: true,
+      svgoPlugins: [{removeViewBox: false}],
+      use: [pngquant()]
+    }))
     .pipe(gulp.dest(path.join(destPath, 'img')));
 });
 
